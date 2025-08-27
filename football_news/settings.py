@@ -29,7 +29,7 @@ load_dotenv()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 PRODUCTION = os.getenv('PRODUCTION', 'False').lower() == 'true'
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1","bagas-zharif-footballnews.pbp.cs.ui.ac.id"]
 
 
 # Application definition
