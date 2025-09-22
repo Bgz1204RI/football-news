@@ -38,6 +38,17 @@
   <p>{{ news.content|truncatewords:25 }}...</p>
 
   <p><a href="{% url 'main:show_news' news.id %}"><button>Read More</button></a></p>
+  <a href="{% url 'main:logout' %}">
+  <button>Logout</button>
+  <h5>Last login session: {{ last_login }}</h5>
+  <hr>
+  <a href="?filter=all">
+    <button type="button">All Articles</button>
+  </a>
+  <a href="?filter=my">
+    <button type="button">My Articles</button>
+  </a>
+  </a>
 </div>
 
 <hr>
