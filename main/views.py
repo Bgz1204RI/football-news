@@ -50,7 +50,6 @@ def register(request):
 
 
 def show_xml_by_id(request, news_id):
-    # filter() never raises DoesNotExist; check emptiness instead
     qs = News.objects.filter(pk=news_id)
     if not qs.exists():
         return HttpResponse(status=404)
@@ -59,8 +58,8 @@ def show_xml_by_id(request, news_id):
 
 def show_json_by_id(request, news_id):
     try:
-        obj = News.objects.get(pk=news_id)  # get() raises DoesNotExist for 404
+        obj = News.objects.get(pk=news_id)  
     except News.DoesNotExist:
         return HttpResponse(status=404)
-    json_data = serializers.serialize("json", [obj])  # wrap single obj in a list
+    json_data = serializers.serialize("json", [obj])  
     return HttpResponse(json_data, content_type="application/json")

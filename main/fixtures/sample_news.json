@@ -1,0 +1,15 @@
+[
+  {
+    "model": "main.news",
+    "pk": 1,
+    "fields": {
+      "title": "Victor Boniface's AC Milan transfer collapses",
+      "content": "Kicker and a host of other German football media sources currently report that Victor Boniface's transfer to AC Milan has collapsed. The Nigerian striker is on his way back to his Bundesliga outfit after a failed medical. Milan have decided against taking the Bayer Leverkusen professional on loan due to issues with his right knee. Milan and Leverkusen had negotiated a loan deal with a €30m purchase option for the 24-year-old. Kicker notes that the Serie A outfit hasn't completely ruled out signing Boniface ahead of the new season. This, according to the German magazine, nevertheless remains highly unlikely. Whether or not Boniface can hope to attain minutes with a Leverkusen side on which two strikers (Patrik Schick and Christian Kofane) remain ahead of him on the depth chart isn't clear. Boniface retained plenty of enthusiasm about representing die Werkself during a summer interview. Germany's red company team must now decide if they can reciprocate Boniface's fervor with some of their own. The 13-times-capped international scored ten goals across all competitions for Leverkusen last season.",
+      "category": "transfer",
+      "thumbnail": "https://transfer-site.co.uk/wp-content/uploads/2024/09/victor-boniface-transfer.jpg",
+      "news_views": 2,
+      "created_at": "2025-08-31T10:03:26.519Z",
+      "is_featured": true
+    }
+  }
+]
