@@ -95,6 +95,22 @@ def logout_user(request):
     response.delete_cookie('last_login')
     return response
 
+def edit_news(request, id):
+    news = get_object_or_404(News,pk=id)
+    form = NewsForm(request.POST or None, instance=news)
+    if form.is_valid() and request.method == 'POST':
+        form.save()
+        return redirect('main:show_main')
+    context = {
+        'form': form
+    }
+    return render(request, "edit_news.html", context)
+
+def delete_news(request, id):
+    news = get_object_or_404(News, pk=id)
+    news.delete()
+    return HttpResponseRedirect(reverse('main:show_main'))
+
 def show_xml_by_id(request, news_id):
     qs = News.objects.filter(pk=news_id)
     if not qs.exists():
